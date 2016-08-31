@@ -1,0 +1,1 @@
+./clien_corpus/total.refined.all.seg.shuffled.subsample.utf8
