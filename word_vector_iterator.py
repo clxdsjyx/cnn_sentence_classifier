@@ -20,9 +20,9 @@ class ClienWordVectorIterator(Iterator):
 				if len(tokens) < 3:
 					continue
 
-				if train_mode and cnt <= 800000:
+				if train_mode and cnt <= 90000:
 					data.append((tokens[2], tokens[0]))
-				elif not train_mode and cnt > 800000:
+				elif not train_mode and cnt > 90000:
 					data.append((tokens[2], tokens[0]))
 				
 				if not tokens[0] in classes:
