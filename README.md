@@ -7,7 +7,7 @@ Since this code is implemented based on [Keras](http://keras.io/), you need inst
 ## What is differ from the paper
 - It needs pre-trained word embedding vector to represent a sentence as an input for neural network.
 So, you need to get it before you run. I recommend to use [Gensim Word2vec](https://radimrehurek.com/gensim/models/word2vec.html) library to get vectors, which is one of easiest and trustful library for Word2vec.
-- Of course, you can add channels or replace Word2vec vectors using other ways, such as GloVe.
+- Word vector has 200 dimensions. Of course, you can add channels or replace Word2vec vectors using other ways, such as GloVe.
 - The size and number of convolutional filter is differ from the paper, and you can change it easily. You will find out that you need to vary it depends on the Corpus to classify.
 - Stride (subsampling) is applied for filters for 2 words. So, we can extract a tuple of words which has long distances in a sentence.
   - For example, if we have a sentence "I ***like*** red and fresh ***apple***.", we can extract (like, apple) tuple using stride with skipping "red and fresh". It might be possible to extract similar pattern using longer filter, but it must be more difficult than this way.
