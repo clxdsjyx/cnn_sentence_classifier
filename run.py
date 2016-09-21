@@ -1,6 +1,6 @@
 from deeplearning_assistant.assistant import DeepLearningAssistant
 from word_vector_iterator import ClienWordVectorIterator
-from tmon_word_vector_iterator import TmonSentimentAnalysisWordVectorIterator as TmonIterator
+#from tmon_word_vector_iterator import TmonSentimentAnalysisWordVectorIterator as TmonIterator
 from cnn_classifier import CnnClassifier
 
 if __name__ == "__main__":
